@@ -9,6 +9,3 @@ RUN apt-get -y update \
     && npm install -g npm@"$NPM_VERSION" \
     && npm cache clear --force \
     && gem install s3_website
-
-ENTRYPOINT ["s3_website"]
-CMD ["--help"]
